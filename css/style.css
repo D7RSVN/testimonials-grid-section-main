@@ -1,0 +1,170 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> */
+
+body {
+    margin: 0;
+    background-color: hsl(210, 46%, 95%);
+}
+
+p {
+    color: inherit;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 17% auto;
+}
+
+img {
+    grid-row: 1 / span 2;
+    border-radius: 100px;
+    width: 60%;
+    border: solid 2px;
+    border-color: hsl(0, 0%, 81%);
+    color: white;
+}
+
+.name {
+    font-size: 3.55vw;
+}
+
+.tag {
+    font-size: 3vw;
+    color: hsl(0, 0%, 81%);
+}
+
+.profile-container>p {
+    margin: 0;
+}
+
+.testi-container {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 19vw 6.5%;
+    transition: 0.3s;
+}
+
+.testi {
+    padding: 6.4vw 9%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 500;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 7.5%;
+    transition: 0.3s;
+}
+
+.overall>p {
+    font-size: 5.44vw;
+    margin-top: 6%;
+    font-weight: 600;
+    margin-bottom: 7%;
+}
+
+.long>p {
+    margin-top: 0;
+    font-size: 3.5vw;
+    line-height: 1.4;
+    margin-bottom: 2%;
+    color: hsl(0, 0%, 81%);
+}
+
+.testi:first-child {
+    background: url("../images/bg-pattern-quotation.svg") no-repeat;
+    background-position: right 10.5% top;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.testi:first-child>.long>p {
+    padding-right: 6%;
+}
+
+.testi:nth-child(2) {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.testi:nth-child(4) {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .testi {
+        margin: 0;
+        padding: 1.7vw 2.14vw;
+        padding-bottom: 1.5vw;
+    }
+
+    .testi-1 {
+        grid-area: a;
+    }
+
+    .testi-2 {
+        grid-area: b;
+    }
+    
+    .testi-3 {
+        grid-area: c;
+    }
+
+    .testi-4 {
+        grid-area: d;
+    }
+    
+    .testi-5 {
+        grid-area: e;
+    }
+
+    .testi-container {
+        grid-template-columns: 23.125% 23.125% 23.125% 23.125%;
+        grid-template-areas: "a a b e"
+                "c d d e";
+        margin: 11.3vw 11.5%;
+        gap: 1.7vw 2.5%;
+    }
+
+    .profile-container {
+        grid-template-columns: 3.2vw auto;
+    }
+
+    img {
+        width: 65%;
+        border: solid 1.5px;
+    }
+
+    .name {
+        font-size: 0.92vw;
+    }
+
+    .tag {
+        font-size: 0.78vw;
+    }
+
+    .overall>p {
+        font-size: 1.4vw;
+        margin-top: 1vw;
+        margin-bottom: 1.2vw;
+    }
+
+    .long>p {
+        font-size: 0.91vw;
+    }
+
+    .testi:first-child>.long>p {
+        padding-right: 0;
+    }
+}
+
+
+
